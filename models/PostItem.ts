@@ -31,12 +31,17 @@ const postItemSchema = new mongoose.Schema(
       default: null,
     },
     top: {
-      type: boolean,
+      type: Boolean,
       default: false,
     },
+    hot: {},
+    popular: {
+      type: Boolean,
+      default: false,
+    },
+    featured: {},
     trending: {
       type: String,
-      default: false,
     },
   },
   {
